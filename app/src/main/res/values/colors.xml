@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nocturne_bg">#161826</color>
+    <color name="nocturne_surface">#232532</color>
+    <color name="nocturne_text">#E9E9ED</color>
+    <color name="nocturne_muted">#8C8FA3</color>
+    <color name="nocturne_border">#2E3140</color>
+    <color name="nocturne_accent">#9184D9</color>
+    <color name="nocturne_accent_300">#BFB6EC</color>
+    <color name="nocturne_accent_700">#4A4275</color>
+    <color name="nocturne_accent_900">#201E33</color>
+    <color name="nocturne_ripple">#339184D9</color>
+</resources>

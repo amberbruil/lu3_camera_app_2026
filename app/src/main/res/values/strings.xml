@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lu3_camera_app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gallery_kicker">Gallery</string>
+    <string name="gallery_title">Pick a source</string>
+    <string name="gallery_subtitle">Browse what\u2019s on this device, or the images you\u2019ve synced to the cloud.</string>
+    <string name="source_local">Local images</string>
+    <string name="source_local_meta">On this device</string>
+    <string name="source_cloud">Cloud images</string>
+    <string name="source_cloud_meta">Synced from your account</string>
+    <string name="recent">Recent</string>
+    <string name="upload_new">Upload new image</string>
+</resources>
