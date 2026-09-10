@@ -21,6 +21,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LocalImagesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Lu3_camera_app"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

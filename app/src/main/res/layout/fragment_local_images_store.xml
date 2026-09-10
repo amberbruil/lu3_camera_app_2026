@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/nocturne_bg"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="24dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="22dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/nocturne_accent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_entry"
+            android:textAllCaps="true"
+            android:textColor="@color/nocturne_accent_300"
+            android:textSize="11sp"
+            android:letterSpacing="0.14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/add_an_image"
+        android:textColor="@color/nocturne_text"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Image name -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/image_name"
+        android:textAllCaps="true"
+        android:textColor="@color/nocturne_muted"
+        android:textSize="11sp"
+        android:letterSpacing="0.14" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        style="@style/Nocturne.TextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtImageDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/image_name_hint"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:minHeight="44dp"
+            android:textColor="@color/nocturne_text"
+            android:textColorHint="@color/nocturne_muted"
+            tools:text="My pet worm" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Preview header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preview"
+            android:textAllCaps="true"
+            android:textColor="@color/nocturne_muted"
+            android:textSize="11sp"
+            android:letterSpacing="0.14" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="12dp"
+            android:background="@drawable/divider" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChooseImage"
+            style="@style/Nocturne.Button.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="44dp"
+            android:text="@string/choose_image"
+            app:icon="@drawable/ic_image_square"
+            app:iconSize="16dp"
+            app:iconGravity="textStart" />
+    </LinearLayout>
+
+    <!-- Preview surface -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivPreview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:background="@color/nocturne_surface"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/preview"
+        app:shapeAppearanceOverlay="@style/Nocturne.Thumb"
+        app:strokeColor="@color/nocturne_border"
+        app:strokeWidth="1dp"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <!-- Reset / Save -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReset"
+            style="@style/Nocturne.Button.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/action_reset"
+            app:icon="@drawable/ic_reset"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            style="@style/Nocturne.Button.Outlined"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/action_save"
+            app:icon="@drawable/ic_floppy_disk"
+            app:iconGravity="textStart" />
+    </LinearLayout>
+</LinearLayout>

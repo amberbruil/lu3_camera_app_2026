@@ -1,7 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">lu3_camera_app</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Photo Memories</string>
     <string name="gallery_kicker">Gallery</string>
     <string name="gallery_title">Pick a source</string>
     <string name="gallery_subtitle">Browse what\u2019s on this device, or the images you\u2019ve synced to the cloud.</string>
@@ -11,4 +10,27 @@
     <string name="source_cloud_meta">Synced from your account</string>
     <string name="recent">Recent</string>
     <string name="upload_new">Upload new image</string>
+    <string name="action_view">View</string>
+    <string name="action_add">Add</string>
+    <string name="action_save">Save</string>
+    <string name="action_reset">Reset</string>
+    <string name="new_entry">New entry</string>
+    <string name="add_an_image">Add an image</string>
+    <string name="image_name">Image name</string>
+    <string name="image_name_hint">Name this image</string>
+    <string name="preview">Preview</string>
+    <string name="choose_image">Choose image</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_subtitle">Your gallery and cloud uploads travel with your account.</string>
+    <string name="email">Email</string>
+    <string name="email_hint">you@example.com</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or">or</string>
+    <string name="action_login">Log in</string>
+    <string name="action_register">Create an account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

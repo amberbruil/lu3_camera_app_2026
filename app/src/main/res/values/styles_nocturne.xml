@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- merge into res/values/themes.xml (or styles.xml) -->
+<resources>
+    <style name="Nocturne.Card.Source" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/nocturne_surface</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/nocturne_border</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="rippleColor">@color/nocturne_ripple</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Nocturne.Thumb" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <!-- Nocturne primary action: an accent outline, never a fill -->
+    <style name="Nocturne.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/nocturne_accent</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textColor">@color/nocturne_accent</item>
+        <item name="iconTint">@color/nocturne_accent</item>
+        <item name="rippleColor">@color/nocturne_ripple</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <!-- Secondary: neutral outline -->
+    <style name="Nocturne.Button.Secondary" parent="Nocturne.Button.Outlined">
+        <item name="strokeColor">@color/nocturne_border</item>
+        <item name="android:textColor">@color/nocturne_text</item>
+        <item name="iconTint">@color/nocturne_text</item>
+    </style>
+
+    <!-- Text-only action -->
+    <style name="Nocturne.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/nocturne_accent_300</item>
+        <item name="iconTint">@color/nocturne_accent_300</item>
+        <item name="rippleColor">@color/nocturne_ripple</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Nocturne.TextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/nocturne_surface</item>
+        <item name="boxStrokeColor">@color/nocturne_accent</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:textColorHint">@color/nocturne_muted</item>
+    </style>
+</resources>

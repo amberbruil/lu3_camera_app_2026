@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/ic_image_square.xml — Phosphor -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="256"
+    android:viewportHeight="256">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,16V156.69l-30.34-30.35a16,16,0,0,0-22.63,0L133.66,148,99.31,113.66a16,16,0,0,0-22.63,0L48,142.34V48ZM48,164.94l40-40L155.5,192.5,152,196H48ZM208,208H174.63l-29.66-29.66L166.34,157,208,198.63V208Z" />
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M156,88a12,12,0,1,1,12,12A12,12,0,0,1,156,88Z" />
+</vector>

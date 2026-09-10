@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/fragment_login.xml
+     Requires com.google.android.material:material:1.12.0 -->
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nocturne_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="56dp"
+        android:paddingBottom="24dp">
+
+        <!-- brand mark -->
+
+        <!-- kicker -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="22dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/nocturne_accent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_back"
+                android:textAllCaps="true"
+                android:textColor="@color/nocturne_accent_300"
+                android:textSize="11sp"
+                android:letterSpacing="0.14" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/nocturne_text"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingMultiplier="1.15" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/sign_in_subtitle"
+            android:textColor="@color/nocturne_muted"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4sp" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="8dp"
+            android:labelFor="@id/etEmail"
+            android:text="@string/email"
+            android:textAllCaps="true"
+            android:textColor="@color/nocturne_muted"
+            android:textSize="11sp"
+            android:letterSpacing="0.14" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Nocturne.TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_envelope"
+            app:startIconTint="@color/nocturne_muted">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"
+                android:maxLines="1"
+                android:textColor="@color/nocturne_text"
+                android:textColorHint="@color/nocturne_muted" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp"
+            android:labelFor="@id/etPassword"
+            android:text="@string/password"
+            android:textAllCaps="true"
+            android:textColor="@color/nocturne_muted"
+            android:textSize="11sp"
+            android:letterSpacing="0.14" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Nocturne.TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconTint="@color/nocturne_muted"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/nocturne_muted">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:autofillHints="password"
+                android:maxLines="1"
+                android:textColor="@color/nocturne_text"
+                android:textColorHint="@color/nocturne_muted" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnForgotPassword"
+            style="@style/Nocturne.Button.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            android:minHeight="44dp"
+            android:text="@string/forgot_password" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:minHeight="24dp" />
+
+        <!-- Log in -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            style="@style/Nocturne.Button.Outlined"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/action_login"
+            app:icon="@drawable/ic_sign_in"
+            app:iconSize="18dp"
+            app:iconGravity="textStart" />
+
+        <!-- or -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="14dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/divider_fade_start" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textAllCaps="true"
+                android:textColor="@color/nocturne_muted"
+                android:textSize="11sp"
+                android:letterSpacing="0.14" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/divider_fade" />
+        </LinearLayout>
+
+        <!-- Register -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            style="@style/Nocturne.Button.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/action_register"
+            app:icon="@drawable/ic_user_plus"
+            app:iconSize="18dp"
+            app:iconGravity="textStart"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
