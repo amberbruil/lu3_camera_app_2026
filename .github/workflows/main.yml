@@ -14,7 +14,7 @@ on:
 
   push:
     branches:
-      - 'release/**'
+      - main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,8 +32,8 @@ jobs:
       - uses: actions/checkout@v4
 
       # Recreate google-services.json from the GitHub secret
-      - name: Create google-services.json
-        run: echo "${{ secrets.GOOGLE_SERVICES_JSON }}" | base64 --decode > ${{ env.main_project_module }}/google-services.json
+      #  - name: Create google-services.json
+      #  run: echo "${{ secrets.GOOGLE_SERVICES_JSON }}" | base64 --decode > ${{ env.main_project_module }}/google-services.json
 
       # Set Current Date As Env Variable
       - name: Set current date as env variable
