@@ -42,6 +42,15 @@ class MainChoiceFragment : Fragment() {
             startActivity(openLocalImages)
         }
 
+        binding.cardCloud.setOnClickListener {
+            val openCloudImages = Intent(
+                activity,
+                CloudImagesActivity::class.java
+            )
+            startActivity(openCloudImages)
+        }
+
+
         return binding.root
     }
 }

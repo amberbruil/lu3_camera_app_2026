@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/divider_fade_start.xml — mirror of divider_fade -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#00000000"
+        android:endColor="@color/nocturne_border"
+        android:angle="0" />
+</shape>

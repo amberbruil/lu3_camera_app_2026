@@ -51,7 +51,7 @@ class LocalImagesStoreFragment : Fragment() {
         binding.btnSave.setOnClickListener {
             val name = binding.txtImageDescription.text.toString()
             if (name.isNotBlank() && bitmap != null) {
-                val imageToStore = ImageModel(name, bitmap)
+                val imageToStore = ImageModel(name, bitmap, null)
                 imagedb.storeImageLocal(imageToStore)
                 // Clear inputs after saving
                 binding.txtImageDescription.text?.clear()

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "528756332865",
+    "project_id": "photomemories-1a50a",
+    "storage_bucket": "photomemories-1a50a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528756332865:android:ad4e30be6cd98f9f3929c0",
+        "android_client_info": {
+          "package_name": "com.example.lu3_camera_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB19GXsYDgGbbr9eOXqgbhvr7lc7Yzz4zQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -96,7 +96,7 @@ class DatabaseHandler(private val context: Context?)
                     val imageName: String = cursor.getString(0)
                     val image: ByteArray = cursor.getBlob(1)
                     val imageBitmap = BitmapFactory.decodeByteArray(image, 0, image.size)
-                    dbImages.add(ImageModel(imageName, imageBitmap))
+                    dbImages.add(ImageModel(imageName, imageBitmap, null))
 
                     Log.d("DB",dbImages.toString())
                 }
