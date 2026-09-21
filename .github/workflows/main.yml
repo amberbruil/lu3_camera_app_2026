@@ -5,7 +5,7 @@ env:
   main_project_module: app
 
   # The name of the Play Store
-  playstore_name: Frogobox ID
+  playstore_name: CameraApp
 
   # The output folder for build results
   build_output_path: buildActionResult
@@ -24,8 +24,16 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    # Allows the final step to push build outputs back to the repo
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
+
+      # Recreate google-services.json from the GitHub secret
+      - name: Create google-services.json
+        run: echo "${{ secrets.GOOGLE_SERVICES_JSON }}" | base64 --decode > ${{ env.main_project_module }}/google-services.json
 
       # Set Current Date As Env Variable
       - name: Set current date as env variable
