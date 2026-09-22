@@ -17,6 +17,7 @@ class ExampleUnitTest {
 
     /*
         Testing the ImageModel class to ensure it's initialised correctly
+        test commit
      */
     @Test
     fun imageModel_initialization_isCorrect() {
